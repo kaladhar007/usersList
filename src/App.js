@@ -36,7 +36,7 @@ const App = () => (
     <h1 className="title">UsersList</h1>
     <ul>
       {userDetailsList.map(each => (
-        <UserProfile userDetails={each} />
+        <UserProfile userDetails={each} key={uniqueKey}/>
       ))}
     </ul>
   </div>
